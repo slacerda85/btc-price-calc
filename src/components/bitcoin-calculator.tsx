@@ -115,6 +115,10 @@ export function BitcoinCalculator() {
           }</div>
         </div>
       </CardContent>
+      {/* copyright */}
+      <div className="text-center text-xs text-gray-500 p-4">
+        © 2021 Bitcoin Calculator. All rights reserved.
+      </div>
     </Card>
   )
 }
