@@ -1,2 +1,2 @@
 # btc-price-calc
-Bitcoin estimate price calculator
+Bitcoin estimate price calculator test
