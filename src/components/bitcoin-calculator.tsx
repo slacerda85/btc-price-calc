@@ -47,7 +47,7 @@ export function BitcoinCalculator() {
   const estimatedPrice = isNaN(calculateEstimatedPrice()) ? 0 : calculateEstimatedPrice();
 
   return (
-    <Card className="w-full max-w-md mx-auto">
+    <Card className="w-full max-w-md mx-auto backdrop-blur-sm">
       <CardHeader>
         <CardTitle className='flex items-center gap-x-2'>
           <Image src="/btc-logo.png" alt="Bitcoin Logo" width={36} height={36} />
