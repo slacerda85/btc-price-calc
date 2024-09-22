@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from 'next/image'
 
 export function BitcoinCalculator() {
   const [electricityCost, setElectricityCost] = useState<number>(0.15)
@@ -48,7 +49,10 @@ export function BitcoinCalculator() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle>Bitcoin Price Estimator</CardTitle>
+        <CardTitle className='flex items-center gap-x-2'>
+          <Image src="/btc-logo.png" alt="Bitcoin Logo" width={36} height={36} />
+          Bitcoin Price Estimator
+          </CardTitle>
         <CardDescription>Calculate estimated Bitcoin price based on electricity cost, transaction fees, and network hash rate</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -94,8 +98,9 @@ export function BitcoinCalculator() {
             id="fee-unit"
             checked={useSatoshis}
             onCheckedChange={setUseSatoshis}
+            disabled
           />
-          <Label htmlFor="fee-unit">Use Satoshis</Label>
+          <Label htmlFor="fee-unit" aria-disabled={true}>Use Satoshis</Label>
         </div>
         <div className="space-y-2">
           <Label htmlFor="hash-rate">Network Hash Rate (EH/s)</Label>
