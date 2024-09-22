@@ -1,6 +1,3 @@
-Here's a basic README.md template for your "Bitcoin Estimate Price Calculator" project:
-
-```markdown
 # Bitcoin Estimate Price Calculator
 
 The **Bitcoin Estimate Price Calculator** is a Next.js application designed to provide users with an estimated price of Bitcoin based on current network variables and energy costs. This tool helps users understand how various factors like hash rate, energy consumption, and electricity costs could influence the price of Bitcoin.
@@ -80,4 +77,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 Thank you for using the Bitcoin Estimate Price Calculator!
-```
+
